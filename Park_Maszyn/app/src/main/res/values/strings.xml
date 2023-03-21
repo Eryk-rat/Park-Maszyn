@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Park_Maszyn</string>
+    <string name="welcom">WITAMY W PANELU LOGOWANIA WPISZ NAZWE URZYTKOWNIKA I HASŁO</string>
+    <string name="name">Name</string>
+    <string name="password">Hasło</string>
+    <string name="zaloguj">Zaloguj</string>
+</resources>

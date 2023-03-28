@@ -1,0 +1,135 @@
+
+.sidebar {
+    float: left; /* Ustawienie menu na lewo */
+    height: 95%;
+    background-color: green;
+    border-radius: 25px;
+    min-width: 250px;
+    max-width: 13%;
+    margin: 20px;
+}
+
+.sidebar_1{
+    height: 10%;
+    padding: 5%;
+    justify-content: center;
+    margin-top: 10%;
+ 
+}
+.sidebar_menu{
+    min-height: 80%;
+    padding: 5%;
+    color: aliceblue; 
+    font-size: 19px;
+    text-align: center;
+    list-style-type: none;
+}
+.sidebar_menu_item_link{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.sidebar_menu_item{
+    margin: 10px;
+    border-radius: 25px;
+    
+}
+
+.sidebar_menu_item:hover{
+    margin: 10px;
+    border-radius: 25px;
+    color: black;
+    background-color: aliceblue;
+    transition-duration: 1s;
+}
+
+.aplication_name{
+      font-size: 22px;
+    text-decoration: none;
+    color: aliceblue; 
+    
+}
+
+.sidebar_user{
+    margin: 10px;
+    border-radius: 25px;
+    color: aliceblue; 
+    list-style-type: none;
+    font-size: 19px;
+    text-align: center;
+}
+
+.sidebar_user:hover{
+    margin: 10px;
+    border-radius: 25px;
+    color: black;
+    background-color: aliceblue;
+    transition-duration: 0,5s;
+}
+
+
+
+.card_body{
+    margin:auto;
+}
+
+.header{
+    width: 80%;
+    height: 5%;
+    margin: 2%;
+    font-size: x-large;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom-style: solid;
+    border-bottom-color: coral;
+}
+
+.container-0{
+    width: 30%;
+    height: 75%;
+    float: left;
+    vertical-align: middle;
+    font-size: x-large;
+}
+.container-1{
+    width: 50%!important;
+    height: 75%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-form-employee{
+    width: 70%;
+    
+    height: 400px;
+    float: left;
+    padding: 20px;
+    border-color: rgb(255, 123, 0);
+    border-width: thick;
+    border-style: solid;
+    border-radius: 15px;
+   
+}
+
+.form-employee{
+    margin-top: 10px;
+}
+
+.btn-form-employee{
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(0, 68, 255);
+    color: aliceblue;
+    border-color: aliceblue ;
+}
+
+.btn-form-employee:hover{
+    background-color: rgb(205, 219, 255);
+    color: black;
+    transition-duration: 1s;
+}
+

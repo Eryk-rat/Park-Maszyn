@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\EmployeeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +25,16 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/users', [HomeController::class, 'index'])->name('users.index');
+
+Route::get('/employees/create', [EmployeeController::class, 'create'])->name('employees.create');
+
+Route::post('/employees/store', [EmployeeController::class, 'store'])->name('employees.store');
+
+
+
+
+Route::group(['middleware' => ['admin']], function () {
+     // tutaj umieszczasz trasy, do których ma mieć dostęp tylko super admin
+     Route::get('/companies/create', [CompanyController::class, 'create'])->name('companies.create');
+});

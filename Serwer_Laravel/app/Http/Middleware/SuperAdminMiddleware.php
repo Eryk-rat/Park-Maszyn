@@ -15,7 +15,7 @@ class SuperAdminMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if ($request->user() && auth()->user()->permission === 1) {
+        if ($request->user() && $request->user()->position && $request->user()->position->permissions == 1) {
             return $next($request);
         }
 

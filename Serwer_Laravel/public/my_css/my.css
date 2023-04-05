@@ -82,6 +82,7 @@
     justify-content: flex-end;
     border-bottom-style: solid;
     border-bottom-color: coral;
+    padding-right: 20px;
 }
 
 .container-0{
@@ -100,11 +101,78 @@
     align-items: center;
 }
 
+.container-firmy{
+    margin: 2%;
+    height: 75%;
+    margin-left: 300px;
+    align-items: center;
+    justify-content: center;
+    font-size:medium;
+    
+}
+
+.container-firmy-header{
+    font-size: x-large;
+}
+
+.firmy-header-name{
+    width: 81%;
+    float: left;
+    margin: 15px;
+}
+
+.firmy-header-botton{
+    border-radius: 15px;
+    padding: 15px;
+ 
+    background-color: rgb(0, 68, 255);
+    color: aliceblue;
+    border-color: aliceblue ;
+}
+
+.single-company{
+ 
+    border-style: double;
+    border-width: 3px;
+    padding: 20px;
+    margin-top: 10px;
+    height: 270px;
+
+}
+
+.company-data{
+    float:left;
+    width: 85%;
+    padding: 30px;
+}
+
+.company-header{
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: x-large;
+   clear: both;
+   margin-left: 30px;
+}
+
+.company-label{
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    width: 80%;
+}
+.company-body{
+    margin-left: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
+.company-logo{
+   
+    height: 170px;
+   
+}
+
 
 .container-form-employee{
     width: 70%;
     
-    height: 400px;
     float: left;
     padding: 20px;
     border-color: rgb(255, 123, 0);
@@ -133,3 +201,6 @@
     transition-duration: 1s;
 }
 
+.single-emploeyy{
+    font-size: medium;
+}

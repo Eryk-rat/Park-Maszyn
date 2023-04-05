@@ -13,14 +13,19 @@
                         <li >Pracownicy</li> 
                     </div>
                 </a>
-                <div class="sidebar_menu_item"> <li>Maszyny</li> </div>
+                <a class="sidebar_menu_item_link" href="{{ route('machines.create') }}">
+                    <div class="sidebar_menu_item"  role="button"> 
+                        <li >Maszyny</li> 
+                    </div>
+                </a>
                 <div class="sidebar_menu_item"> <li>Przeglądy</li> </div>
-                <a class="sidebar_menu_item_link" href="{{ route('companies.create') }}">
+                @if (auth()->user()->position->permissions == 1)
+                <a class="sidebar_menu_item_link" href="{{ route('companies.index') }}">
                     <div class="sidebar_menu_item"  role="button"> 
                         <li >Firmy</li> 
                     </div>
                 </a>
-           
+                @endif
            
             <!-- Right Side Of Navbar -->
             </div>

@@ -2,13 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
-use App\Models\Company;
-use App\Models\Position;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
-class EmployeeController extends Controller
+class MachineController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -23,25 +19,7 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-       
-
-    $user = Auth::user();
-
-
-        if ($user->company) {
-            $users = User::with('position')->where('company_id', $user->company->id)->get();
-            $loggedUser = auth()->user();
-            $positions = Position::where('id', '>', $loggedUser->position_id)->get();
-
-
-            if ($loggedUser->position_id === 1) {
-                $companies = Company::all();
-                return view('employees.create', compact('positions', 'users', 'companies'));
-            }
-            return view('employees.create', compact('positions', 'users'));
-        } else {
-            return view('employees.index');
-        }
+        return view('machines.create');
     }
 
     /**

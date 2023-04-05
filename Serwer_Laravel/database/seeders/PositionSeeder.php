@@ -13,20 +13,20 @@ class PositionSeeder extends Seeder
      */
     public function run(): void
     {
+
         Position::create([
-            'name' => 'Kierownik',
+            'name' => 'Super admin',
             'permissions' => 1,
         ]);
-
         Position::create([
             'name' => 'Admin',
             'permissions' => 2,
         ]);
-
         Position::create([
-            'name' => 'Super admin',
+            'name' => 'Kierownik',
             'permissions' => 3,
         ]);
+
 
         Position::create([
             'name' => 'Pracownik',

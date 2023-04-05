@@ -5,7 +5,9 @@
 @section('content')
 <div class="container-0">
     <div class="emploer list">
-        Twoi pracownicy
+    @foreach ($users as $user)
+    @include('item.employee')
+    @endforeach
     </div>
 
 </div>
@@ -15,6 +17,17 @@
     <div class="container-form-employee">
         <form method="POST" action="{{ route('employees.store') }}">
             @csrf
+            @if (auth()->user()->position->permissions == 1)
+            <div class="form-employee">
+                <label for="companies">Firma:</label>
+                <select class="form-control" id="company_id" name="company_id">
+                    <option value="">Wybierz firmę</option>
+                    @foreach ($companies as $company)
+                        <option value="{{ $company->id }}">{{ $company->name }}</option>
+                    @endforeach
+                </select>
+            </div>
+            @endif
             <div class="form-employee">
                 <label for="first_name">Imię:</label>
                 <input type="text" class="form-control" name="first_name" id="first_name" required>

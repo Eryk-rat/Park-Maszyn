@@ -7,7 +7,7 @@
 <div class='container-firmy'>
     <div class='container-firmy-header'>
         <div class='firmy-header-name'>
-            Stworzone firmy
+            Obecne Maszyny
         </div>   
         
         <div >
@@ -16,9 +16,6 @@
     </div>  
     
 
-    @foreach ($companies as $company)
-    @include('item.company')
-    @endforeach
 </div>
 
 @endsection

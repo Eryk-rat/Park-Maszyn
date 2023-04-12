@@ -1,0 +1,11 @@
+.icon_users{
+    min-width: 30px;
+    min-height: 30px;
+}
+#app{
+    background-color: black;
+}
+.sidebar {
+    width: 20%;
+    float: left; /* Ustawienie menu na lewo */
+}

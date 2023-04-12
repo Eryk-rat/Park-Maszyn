@@ -1,0 +1,36 @@
+.Table_date {
+    width: 96%;
+    border-collapse: collapse;
+    margin: 2%;
+    }
+    
+    .Table_date th,
+    .Table_date td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #ddd;
+    }
+    
+    .Table_date th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    }
+    
+    .button-container-table {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    }
+    
+    .btn-form-table {
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(0, 68, 255);
+    color: aliceblue;
+    border-color: aliceblue;
+    }
+    .btn-form-table:hover{
+        background-color: rgb(205, 219, 255);
+        color: black;
+        transition-duration: 1s;
+    }

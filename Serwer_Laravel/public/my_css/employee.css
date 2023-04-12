@@ -1,0 +1,32 @@
+.container-form-employee {
+    min-width: 70%;
+    float: left;
+    padding: 20px;
+    border-color: rgb(255, 123, 0);
+    border-width: thick;
+    border-style: solid;
+    border-radius: 15px;
+    }
+    
+    .form-employee {
+    margin-top: 10px;
+    }
+    
+    .btn-form-employee {
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(0, 68, 255);
+    color: aliceblue;
+    border-color: aliceblue;
+    }
+    
+    .btn-form-employee:hover {
+    background-color: rgb(205, 219, 255);
+    color: black;
+    transition-duration: 1s;
+    }
+    
+    .single-employee {
+    font-size: medium;
+    }

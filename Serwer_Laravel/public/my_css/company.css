@@ -1,0 +1,80 @@
+.single-company {
+    border-style: double;
+    border-width: 3px;
+    padding: 20px;
+    margin-top: 10px;
+    height: 270px;
+    }
+    
+    .company-data {
+    float: left;
+    width: 85%;
+    padding: 30px;
+    }
+    
+    .company-header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    clear: both;
+    margin-left: 30px;
+    }
+    
+    .company-label {
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    width: 80%;
+    }
+    
+    .company-body {
+    margin-left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    }
+    
+    .company-logo {
+    height: 170px;
+    }
+
+
+/*.single-company{
+ 
+    border-style: double;
+    border-width: 3px;
+    padding: 20px;
+    margin-top: 10px;
+    height: 270px;
+
+}
+
+.company-data{
+    float:left;
+    width: 85%;
+    padding: 30px;
+}
+
+.company-header{
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: x-large;
+   clear: both;
+   margin-left: 30px;
+}
+
+.company-label{
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    width: 80%;
+}
+.company-body{
+    margin-left: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
+.company-logo{
+   
+    height: 170px;
+   
+}
+
+
+
+}*/

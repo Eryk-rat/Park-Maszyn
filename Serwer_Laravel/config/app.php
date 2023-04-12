@@ -210,6 +210,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'PositionFactory' => Database\Factories\PositionFactory::class,
     ])->toArray(),
 
 ];

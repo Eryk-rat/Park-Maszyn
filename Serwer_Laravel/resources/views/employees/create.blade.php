@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@include('item.sidebar')
+
 
 @section('content')
 <div class="container-0">
@@ -20,7 +20,7 @@
             @if (auth()->user()->position->permissions == 1)
             <div class="form-employee">
                 <label for="companies">Firma:</label>
-                <select class="form-control" id="company_id" name="company_id">
+                <select class="form-control"  name="company_id" id="company_id">
                     <option value="">Wybierz firmę</option>
                     @foreach ($companies as $company)
                         <option value="{{ $company->id }}">{{ $company->name }}</option>
@@ -29,12 +29,16 @@
             </div>
             @endif
             <div class="form-employee">
-                <label for="first_name">Imię:</label>
-                <input type="text" class="form-control" name="first_name" id="first_name" required>
+                <label for="name">Imię:</label>
+                <input type="text" class="form-control" name="name" id="name" required>
             </div>
             <div class="form-employee">
                 <label for="last_name">Nazwisko:</label>
                 <input type="text" class="form-control" name="last_name" id="last_name" required>
+            </div>
+            <div class="form-employee">
+                <label for="email">Meil:</label>
+                <input type="email" class="form-control" name="email" id="email" required>
             </div>
             <div class="form-employee">
                 <label for="password">Hasło:</label>

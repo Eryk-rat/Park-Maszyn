@@ -1,12 +1,10 @@
-
-
-
 <tr>
-    <td>{{ $company->id }}</td>
-    <td>{{ $company->name }}</td>
-    <td>{{  $company->address }}</td>
+    <td>{{ $user->id }}</td>
+    <td>{{ $user->company->name }}</td>
+    <td>{{ $user->name }}</td>
+    <td>{{ $user->last_name }}</td>
+    <td>{{ $user->position->name }}</td>
 
-    <td><img src="{{ url('/ikons/brak_foto.png') }}" alt="zdjęcie" width="50" height="50"></td>
     <td>
         <div class="button-container-table">
             <button type="submit" class="btn-form-table">Edytuj</button>

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Park Maszyn V 0.0.1</title>
+        <title>Park Maszyn V 0.1.1</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

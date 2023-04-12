@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
         $companyB = \App\Models\Company::where('name', 'Firma B')->first();
          \App\Models\User::factory()->create([
              'name' => 'admin',
+             'last_name' => 'admin second name',
              'password' => bcrypt('admin123'),
              'email' => 'admin@example.com',
              'position_id' =>1,
@@ -34,6 +35,7 @@ class DatabaseSeeder extends Seeder
 
          \App\Models\User::factory()->create([
             'name' => 'test1',
+            'last_name' => 'test1 last_name',
             'password' => bcrypt('test123'),
             'email' => 'test1@example.com',
             'position_id' =>5,
@@ -41,6 +43,7 @@ class DatabaseSeeder extends Seeder
         ]);
         \App\Models\User::factory()->create([
             'name' => 'test2',
+            'last_name' => 'test2 last_name',
             'password' => bcrypt('test123'),
             'email' => 'test2@example.com',
             'position_id' =>5,
@@ -48,6 +51,7 @@ class DatabaseSeeder extends Seeder
         ]);
         \App\Models\User::factory()->create([
             'name' => 'test3',
+            'last_name' => 'test3 last_name',
             'password' => bcrypt('test123'),
             'email' => 'test3@example.com',
             'position_id' =>5,
